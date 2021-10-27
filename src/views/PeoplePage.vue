@@ -38,12 +38,8 @@ export default {
     }
   },
   computed: {
-    people: {
-      get() {
-        return this.$store.state.people
-      },
-      set() {
-      }
+    people() {
+      return this.$store.getters.people
     }
   }
 }

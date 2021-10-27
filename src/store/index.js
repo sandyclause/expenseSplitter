@@ -4,6 +4,11 @@ export default createStore({
   state: {
     people: {}
   },
+  getters: {
+    people: state => {
+      return state.people
+    }
+  },
   mutations: {
     addPerson(state, name) {
       state.people[name] = {

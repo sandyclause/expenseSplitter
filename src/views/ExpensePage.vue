@@ -12,7 +12,6 @@
       >
       <label for="person.name">{{ person.name }}</label>
     </div>
-    <span>Checked names: {{ checkedNames }}</span>
     <div>
       <label>Expense Name</label>
       <input type="text" name="name" v-model="name" placeholder="Expense Name" />
@@ -44,15 +43,15 @@ export default {
           amount: this.amount
         }
       })
+
+      this.name = ''
+      this.amount = ''
+      this.checked = []
     }
   },
   computed: {
-    people: {
-      get() {
-        return this.$store.state.people
-      },
-      set() {
-      }
+    people() {
+      return this.$store.getters.people
     }
   }
 }

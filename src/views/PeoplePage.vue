@@ -1,7 +1,7 @@
 <template>
   <h2>People</h2>
   <div :key="person" v-for="person in people">
-    <h4>{{person}}</h4>
+    <h4>{{person.name}}</h4>
   </div>
   <form @submit="onSubmit">
     <div>

@@ -1,5 +1,5 @@
 <template>
-  <Header title="Expense Splitter"/>
+  <Header title="Expense Calculator"/>
   <router-view/>
 </template>
 

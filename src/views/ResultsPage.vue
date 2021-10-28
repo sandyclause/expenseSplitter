@@ -5,7 +5,7 @@
     v-for="(person, key) in people"
     :key="key"
   >
-    <p>{{ person.name }}</p>
+    <h3>{{ person.name }}</h3>
     <p
       v-for="(expense, _key) in person.expenses"
       :key="_key"
